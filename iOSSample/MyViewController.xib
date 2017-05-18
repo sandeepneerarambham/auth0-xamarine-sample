@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyViewController">
+            <connections>
+                <outlet property="LoginButton" destination="5" id="name-outlet-5"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="Auth0Badge" destination="9" id="name-outlet-9"/>
+                <outlet property="Auth0Label" destination="76" id="name-outlet-76"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5" misplaced="YES">
+                    <rect key="frame" x="34" y="664" width="345" height="56"/>
+                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
+                    <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                    <state key="normal" title="Login">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <constraints>
+                        <constraint id="49" firstAttribute="width" constant="345"/>
+                        <constraint id="50" firstAttribute="height" constant="56"/>
+                    </constraints>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9" translatesAutoresizingMaskIntoConstraints="NO" image="badge" misplaced="YES">
+                    <rect key="frame" x="104" y="31" width="205" height="219"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint id="72" firstAttribute="width" constant="205"/>
+                        <constraint id="73" firstAttribute="height" constant="219"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auth0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="76" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="150" y="313" width="115" height="51"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <constraints>
+                        <constraint id="125" firstAttribute="width" constant="115"/>
+                        <constraint id="126" firstAttribute="height" constant="51"/>
+                    </constraints>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Powerful Platform for Developers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="102" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="34" y="394" width="335" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint id="54" firstItem="2" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" constant="16"/>
+                <constraint id="55" firstItem="5" firstAttribute="centerX" secondItem="2" secondAttribute="centerX"/>
+                <constraint id="69" firstItem="9" firstAttribute="centerX" secondItem="5" secondAttribute="centerX"/>
+                <constraint id="71" firstItem="9" firstAttribute="top" secondItem="2" secondAttribute="top" constant="31"/>
+                <constraint id="122" firstItem="76" firstAttribute="centerX" secondItem="9" secondAttribute="centerX"/>
+                <constraint id="123" firstItem="76" firstAttribute="centerX" secondItem="2" secondAttribute="centerX"/>
+                <constraint id="124" firstItem="76" firstAttribute="top" secondItem="2" secondAttribute="top" constant="313"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="badge" width="152" height="168"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina55"/>
+    </simulatedMetricsContainer>
+</document>
