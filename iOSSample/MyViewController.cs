@@ -33,8 +33,8 @@ namespace iOSSample
             
 			_client = new Auth0Client(new Auth0ClientOptions
 			{
-				Domain = "vjayaram.au.auth0.com",
-				ClientId = "i1Rg23kjAOHfqt3Pe4fmwhw2YkkVkV1I",
+                Domain = "<AUTH0_DOMAIN>",
+                ClientId = "<AUTH0_CLIENT_ID>",
 				Controller = this
 			});
 
